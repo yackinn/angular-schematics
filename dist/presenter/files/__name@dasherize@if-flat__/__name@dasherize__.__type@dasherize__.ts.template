@@ -1,0 +1,25 @@
+import { Component, OnInit, Input<% if(!!viewEncapsulation) { %>, ViewEncapsulation<% }%><% if(changeDetection !== 'Default') { %>, ChangeDetectionStrategy<% }%> } from '@angular/core';
+
+@Component({
+  selector: '<%= selector %>',
+  changeDetection: ChangeDetectionStrategy.<%= changeDetection %><% if(!!viewEncapsulation) { %>,
+  encapsulation: ViewEncapsulation.<%= viewEncapsulation %><% } %><% if(inlineStyle) { %>,
+  styles: [<% if(displayBlock){ %>
+    `
+      :host {
+        display: block;
+      }
+    `<% } %>
+  ]<% } else { %>,
+  styleUrls: ['./<%= dasherize(name) %><%= type ? '.' + dasherize(type): '' %>.<%= style %>'],<% } if(!template) { %>
+  template: `
+    <div class="<%= dasherize(name) %>">
+      <%= dasherize(name) %> works!
+    </div>
+  `,<% } else { %>
+  templateUrl: './<%= dasherize(name) %><%= type ? '.' + dasherize(type): '' %>.html',<% } %>
+})
+export class <%= classify(name) %><%= classify(type) %> {
+
+
+}

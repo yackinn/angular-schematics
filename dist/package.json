@@ -1,0 +1,25 @@
+{
+    "name": "@yackinn/schematics",
+    "version": "0.0.10",
+    "description": "repo for angular schematics",
+    "keywords": [
+        "schematics"
+    ],
+    "author": "Yannick Boetzkes",
+    "license": "MIT",
+    "schematics": "./collection.json",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yackinn/angular-schematics.git"
+    },
+    "dependencies": {
+        "@angular-devkit/core": "^11.0.5",
+        "@angular-devkit/schematics": "^11.0.5",
+        "typescript": "~3.8.2"
+    },
+    "devDependencies": {
+        "@types/node": "^12.11.1",
+        "@types/jasmine": "~3.5.0",
+        "jasmine": "^3.5.0"
+    }
+}
