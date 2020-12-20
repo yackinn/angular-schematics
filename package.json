@@ -41,7 +41,7 @@
 	},
 	"np": {
 		"contents": "dist",
-		"no-tests": true,
-		"no-yarn": true
+		"tests": false,
+		"yarn": false
 	}
 }
