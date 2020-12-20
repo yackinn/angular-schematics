@@ -34,5 +34,9 @@
 		"@types/node": "^12.11.1",
 		"copyfiles": "^2.2.0",
 		"jasmine": "^3.5.0"
-	}
+	},
+	"np": {
+		"contents": "dist",
+		"no-tests": true
+	  }
 }
