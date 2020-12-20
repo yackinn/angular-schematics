@@ -12,7 +12,7 @@
 		"copy:files": "yarn run copyfiles -u 1 \"src/**/files/**/*\" dist/",
 		"copy:readme": "yarn run copyfiles -u 1 \"src/README.md\" dist/",
 		"copy:packagejson": "yarn run copyfiles -u 1 \"./package.json\" dist/",
-		"release": "npm run clean && npm run build && np --contents=dist --no-tests",
+		"release": "npm run clean && npm run build && np --contents=dist --no-tests --no-yarn",
 		"postversion": "npm run copy:readme && npm run copy:packagejson"
 	},
 	"keywords": [
