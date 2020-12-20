@@ -10,7 +10,8 @@
 	"schematics": "./collection.json",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/yackinn/angular-schematics.git"
+		"url": "https://github.com/yackinn/angular-schematics.git",
+		"directory": "src"
 	},
 	"dependencies": {
 		"@angular-devkit/core": "^11.0.5",

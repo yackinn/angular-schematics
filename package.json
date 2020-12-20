@@ -17,10 +17,6 @@
 	"author": "",
 	"license": "MIT",
 	"schematics": "./src/collection.json",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/yackinn/angular-schematics.git"
-	},
 	"dependencies": {
 		"@angular-devkit/core": "^11.0.5",
 		"@angular-devkit/schematics": "^11.0.5",
