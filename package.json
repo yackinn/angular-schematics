@@ -1,6 +1,6 @@
 {
 	"name": "@ynnck/angular-schematics",
-	"version": "0.0.15",
+	"version": "0.0.16",
 	"description": "repo for angular schematics",
 	"scripts": {
 		"build:dev": "npm run build -- -w",
