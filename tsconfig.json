@@ -1,36 +1,38 @@
 {
 	"compilerOptions": {
-		"stripInternal": true,
-		"experimentalDecorators": true,
-		"baseUrl": "tsconfig",
-		"lib": [
+		"stripInternal"             : true,
+		"experimentalDecorators"    : true,
+		"baseUrl"                   : "tsconfig",
+		"lib"                       : [
 			"es2018",
 			"dom"
 		],
-		"declaration": true,
-		"inlineSources": true,
-		"module": "commonjs",
-		"moduleResolution": "node",
-		"noEmitOnError": true,
+		"declaration"               : true,
+		"inlineSources"             : true,
+		"module"                    : "commonjs",
+		"moduleResolution"          : "node",
+		"noEmitOnError"             : true,
 		"noFallthroughCasesInSwitch": true,
-		"noImplicitAny": false,
-		"noImplicitThis": true,
-		"skipDefaultLibCheck": true,
-		"skipLibCheck": true,
-		"sourceMap": true,
-		"strictNullChecks": true,
-		"target": "es6",
-		"types": [
+		"noImplicitAny"             : false,
+		"noImplicitThis"            : true,
+		"skipDefaultLibCheck"       : true,
+		"skipLibCheck"              : true,
+		"sourceMap"                 : true,
+		"strictNullChecks"          : true,
+		"target"                    : "es6",
+		"types"                     : [
 			"jasmine",
 			"node"
 		],
-		"outDir": "dist",
+		"outDir"                    : "dist/lib",
+		"resolveJsonModule"         : true
 	},
-	"exclude": [
+	"exclude"        : [
 		"sample-project"
 	],
-	"include": [
-		"src/**/*",
-		"src/**/*/*.template"
+	"include"        : [
+		"lib/",
+		"lib/collection.json",
+		"lib/**/*/schema.json",
 	]
 }

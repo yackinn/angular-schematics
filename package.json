@@ -1,47 +1,52 @@
 {
-	"name": "@ynnck/angular-schematics",
-	"version": "0.0.19",
-	"description": "repo for angular schematics",
-	"scripts": {
-		"build:dev": "npm run build -- -w",
-		"build": "tsc -p tsconfig.json",
-		"schematic": "func() { schematics .:\"$1\" \"$2\" --\"$3\" --\"$4\"; }; func",
-		"test": "npm run build && jasmine src/**/*.spec.js",
-		"postbuild": "yarn copy:files && yarn copy:packagejson",
-		"rimraf": "rm -rf ./dist",
-		"clean": "yarn rimraf",
-		"copy:files": "copyfiles -u 1 \"src/**/files/**/*\" dist/",
-		"copy:readme": "copyfiles -u 1 \"src/README.md\" dist/",
-		"copy:packagejson": "copyfiles \"package.json\" dist/",
-		"release": "npm run clean && npm run build && np",
-		"postversion": "yarn copy:readme && yarn copy:packagejson"
-	},
-	"keywords": [
-		"schematics"
-	],
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/yackinn/angular-schematics.git",
-		"directory": "dist"
-	},
-	"author": "",
-	"license": "MIT",
-	"schematics": "./src/collection.json",
-	"dependencies": {
-		"@angular-devkit/core": "^11.0.5",
-		"@angular-devkit/schematics": "^11.0.5",
-		"np": "^7.0.0",
-		"typescript": "~3.8.2"
-	},
-	"devDependencies": {
-		"@types/jasmine": "~3.5.0",
-		"@types/node": "^12.11.1",
-		"copyfiles": "^2.2.0",
-		"jasmine": "^3.5.0"
-	},
-	"np": {
-		"contents": "dist",
-		"tests": false,
-		"yarn": false
-	}
+    "name"           : "@ynnck/angular-schematics",
+    "version"        : "0.0.19",
+    "description"    : "repo for angular schematics",
+    "licenses"       : [
+        {
+            "type": "MIT"
+        }
+    ],
+    "scripts"        : {
+        "build:dev"       : "npm run build -- -w",
+        "build"           : "tsc -p tsconfig.json",
+        "schematic"       : "func() { schematics .:\"$1\" \"$2\" --\"$3\" --\"$4\"; }; func",
+        "test"            : "npm run build && jasmine lib/**/*.spec.js",
+        "postbuild"       : "yarn copy:files && yarn copy:packagejson",
+        "rimraf"          : "rm -rf ./dist",
+        "clean"           : "yarn rimraf",
+        "copy:files"      : "copyfiles \"lib/**/files/**/*\" dist/",
+        "copy:readme"     : "copyfiles -u 1 \"lib/README.md\" dist/",
+        "copy:packagejson": "copyfiles \"package.json\" dist/",
+        "release"         : "npm run clean && npm run build && np",
+        "postversion"     : "yarn copy:readme && yarn copy:packagejson"
+    },
+    "keywords"       : [
+        "schematics"
+    ],
+    "repository"     : {
+        "type"     : "git",
+        "url"      : "https://github.com/yackinn/angular-schematics.git",
+        "directory": "."
+    },
+    "author"         : "",
+    "license"        : "MIT",
+    "schematics"     : "./lib/collection.json",
+    "dependencies"   : {
+        "@angular-devkit/core"      : "^11.0.5",
+        "@angular-devkit/schematics": "^11.0.5",
+        "np"                        : "^7.0.0",
+        "typescript"                : "~3.8.2"
+    },
+    "devDependencies": {
+        "@types/jasmine": "~3.5.0",
+        "@types/node"   : "^12.11.1",
+        "copyfiles"     : "^2.2.0",
+        "jasmine"       : "^3.5.0"
+    },
+    "np"             : {
+        "contents": "dist",
+        "tests"   : false,
+        "yarn"    : false
+    }
 }
