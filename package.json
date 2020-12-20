@@ -10,11 +10,16 @@
 		"postbuild": "yarn run copy:files",
 		"clean": "yarn run rimraf ../../dist/libs/akita/schematics",
 		"copy:files": "yarn run copyfiles -u 1 \"src/**/files/**/*\" dist/ && yarn run copyfiles -u 1 \"src/README.md\" dist/",
-		"release": "cd dist && np"
+		"release": "np --contents=dist"
 	},
 	"keywords": [
 		"schematics"
 	],
+	"repository": {
+        "type": "git",
+        "url": "https://github.com/yackinn/angular-schematics.git",
+        "directory": "dist"
+    },
 	"author": "",
 	"license": "MIT",
 	"schematics": "./src/collection.json",
