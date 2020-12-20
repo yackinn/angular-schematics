@@ -27,7 +27,7 @@
     "repository"     : {
         "type"     : "git",
         "url"      : "https://github.com/yackinn/angular-schematics.git",
-        "directory": "."
+        "directory": "./dist"
     },
     "author"         : "",
     "license"        : "MIT",
