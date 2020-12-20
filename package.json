@@ -1,6 +1,6 @@
 {
 	"name": "@ynnck/angular-schematics",
-	"version": "0.0.11",
+	"version": "0.0.12",
 	"description": "repo for angular schematics",
 	"scripts": {
 		"build:dev": "npm run build -- -w",
@@ -16,10 +16,10 @@
 		"schematics"
 	],
 	"repository": {
-        "type": "git",
-        "url": "https://github.com/yackinn/angular-schematics.git",
-        "directory": "dist"
-    },
+		"type": "git",
+		"url": "https://github.com/yackinn/angular-schematics.git",
+		"directory": "dist"
+	},
 	"author": "",
 	"license": "MIT",
 	"schematics": "./src/collection.json",
@@ -38,5 +38,5 @@
 	"np": {
 		"contents": "dist",
 		"no-tests": true
-	  }
+	}
 }
