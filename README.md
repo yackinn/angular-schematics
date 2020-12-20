@@ -6,6 +6,7 @@ This repository is a basic Schematic implementation that serves as a starting po
 Use the sample project to work with the schematics locally inside an Angular project.
 
 ```bash
+yarn build
 cd dist && yarn link
 cd ../sample-project && yarn link @yackinn/angular-schematics
 cd ..
@@ -27,10 +28,9 @@ Semver is used to publish the package.
 To publish, simply do:
 
 ```bash
-yarn build
-yarn publish
+npm run publish
 ```
-
+Use npm to publish the library. Yarn won't work correctly due to login failure.
 
 ### Testing
 

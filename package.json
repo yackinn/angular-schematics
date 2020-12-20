@@ -7,13 +7,13 @@
 		"build": "tsc -p tsconfig.json",
 		"schematic": "func() { schematics .:\"$1\" \"$2\" --\"$3\" --\"$4\"; }; func",
 		"test": "npm run build && jasmine src/**/*.spec.js",
-		"postbuild": "yarn copy:files",
+		"postbuild": "yarn copy:files && yarn copy:packagejson",
 		"rimraf": "rm -rf ./dist",
 		"clean": "yarn rimraf",
 		"copy:files": "copyfiles -u 1 \"src/**/files/**/*\" dist/",
 		"copy:readme": "copyfiles -u 1 \"src/README.md\" dist/",
 		"copy:packagejson": "copyfiles \"package.json\" dist/",
-		"release": "npm run clean && npm run build && np --contents=dist --no-tests --no-yarn",
+		"release": "npm run clean && npm run build && np",
 		"postversion": "yarn copy:readme && yarn copy:packagejson"
 	},
 	"keywords": [
@@ -41,6 +41,7 @@
 	},
 	"np": {
 		"contents": "dist",
-		"no-tests": true
+		"no-tests": true,
+		"no-yarn": true
 	}
 }

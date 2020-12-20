@@ -25,15 +25,12 @@
 			"node"
 		],
 		"outDir": "dist",
-		"resolveJsonModule": true
 	},
 	"exclude": [
 		"sample-project"
 	],
 	"include": [
-		"src/**/*.json",
 		"src/**/*",
 		"src/**/*/*.template"
-
 	]
 }
