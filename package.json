@@ -9,7 +9,8 @@
 		"test": "npm run build && jasmine src/**/*.spec.js",
 		"postbuild": "yarn run copy:files",
 		"clean": "yarn run rimraf ../../dist/libs/akita/schematics",
-		"copy:files": "yarn run copyfiles -u 1 \"src/**/files/**/*\" dist/ && yarn run copyfiles -u 1 \"src/README.md\" dist/"
+		"copy:files": "yarn run copyfiles -u 1 \"src/**/files/**/*\" dist/ && yarn run copyfiles -u 1 \"src/README.md\" dist/",
+		"publish": "cd dist && np"
 	},
 	"keywords": [
 		"schematics"
