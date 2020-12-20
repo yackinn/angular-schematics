@@ -7,7 +7,7 @@
 		"build": "tsc -p tsconfig.json",
 		"schematic": "func() { schematics .:\"$1\" \"$2\" --\"$3\" --\"$4\"; }; func",
 		"test": "npm run build && jasmine src/**/*.spec.js",
-    	"postbuild": "yarn run copy:files",
+		"postbuild": "yarn run copy:files",
 		"clean": "yarn run rimraf ../../dist/libs/akita/schematics",
 		"copy:files": "yarn run copyfiles -u 1 \"src/**/files/**/*\" dist/"
 	},
@@ -24,12 +24,13 @@
 	"dependencies": {
 		"@angular-devkit/core": "^11.0.5",
 		"@angular-devkit/schematics": "^11.0.5",
+		"np": "^7.0.0",
 		"typescript": "~3.8.2"
 	},
 	"devDependencies": {
-		"copyfiles": "^2.2.0",
-		"@types/node": "^12.11.1",
 		"@types/jasmine": "~3.5.0",
+		"@types/node": "^12.11.1",
+		"copyfiles": "^2.2.0",
 		"jasmine": "^3.5.0"
 	}
 }
