@@ -12,7 +12,7 @@
 		"clean": "yarn rimraf",
 		"copy:files": "copyfiles -u 1 \"src/**/files/**/*\" dist/",
 		"copy:readme": "copyfiles -u 1 \"src/README.md\" dist/",
-		"copy:packagejson": "copyfiles -u 1 \"package.json\" dist/",
+		"copy:packagejson": "copyfiles \"package.json\" dist/",
 		"release": "npm run clean && npm run build && np --contents=dist --no-tests --no-yarn",
 		"postversion": "yarn copy:readme && yarn copy:packagejson"
 	},
