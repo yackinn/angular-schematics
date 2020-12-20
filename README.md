@@ -20,9 +20,24 @@ schematics --help
 To publish, simply do:
 
 ```bash
-npm run build
-npm publish
+yarn build
+yarn publish
 ```
 
-That's it!
- 
+
+Use test project to test schematics locally inside a real project
+
+```bash
+cd dist && yarn link
+cd ../sample-project && yarn link @yackinn/angular-schematics
+
+yarn build:dev
+```
+
+If you change any template files inside the files folder run ```yarn build``` again.
+
+To use the schematics inside the sample project use the Angular language service.
+
+```bash
+ng g @yackinn:angular-schematics container --name good-container
+```

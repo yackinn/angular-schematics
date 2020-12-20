@@ -3,9 +3,9 @@
 	"version": "0.0.10",
 	"description": "repo for angular schematics",
 	"scripts": {
-		"dev": "npm run build -- -w",
-		"schematic": "func() { schematics .:\"$1\" \"$2\" --\"$3\" --\"$4\"; }; func",
+		"build:dev": "npm run build -- -w",
 		"build": "tsc -p tsconfig.json",
+		"schematic": "func() { schematics .:\"$1\" \"$2\" --\"$3\" --\"$4\"; }; func",
 		"test": "npm run build && jasmine src/**/*.spec.js",
     	"postbuild": "yarn run copy:files",
 		"clean": "yarn run rimraf ../../dist/libs/akita/schematics",
