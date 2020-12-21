@@ -8,7 +8,7 @@ Use the sample project to work with the schematics locally inside an Angular pro
 ```bash
 yarn build
 cd dist && yarn link
-cd ../sample-project && yarn link @yackinn/angular-schematics
+cd ../sample-project && yarn link @ynnck/angular-schematics
 cd ..
 yarn build:dev
 ```
@@ -17,7 +17,7 @@ If you change any template files inside the files folder run ```yarn build``` ag
 To use the schematics inside the sample project use the Angular language service.
 
 ```bash
-ng g @yackinn:angular-schematics container --name good-container
+ng g @ynnck/angular-schematics:container --name good-container
 ```
 
 

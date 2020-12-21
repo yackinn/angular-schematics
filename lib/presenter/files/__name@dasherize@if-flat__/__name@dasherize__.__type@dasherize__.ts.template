@@ -20,6 +20,4 @@ import { Component, OnInit, Input<% if(!!viewEncapsulation) { %>, ViewEncapsulat
   templateUrl: './<%= dasherize(name) %><%= type ? '.' + dasherize(type): '' %>.html',<% } %>
 })
 export class <%= classify(name) %><%= classify(type) %> {
-
-
 }

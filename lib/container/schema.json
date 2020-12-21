@@ -117,7 +117,7 @@
 		},
 		"skipSelector": {
 			"type": "boolean",
-			"default": true,
+			"default": false,
 			"description": "Specifies if the component should have a selector or not."
 		},
 		"module": {
