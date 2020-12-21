@@ -28,7 +28,7 @@ Semver is used to publish the package.
 To publish, simply do:
 
 ```bash
-npm run publish
+npm run release
 ```
 Use npm to publish the library. Yarn won't work correctly due to login failure.
 

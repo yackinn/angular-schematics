@@ -1,6 +1,7 @@
 import { Component, OnInit<% if(!!viewEncapsulation) { %>, ViewEncapsulation<% }%><% if(changeDetection !== 'Default') { %>, ChangeDetectionStrategy<% }%> } from '@angular/core';
 
 @Component({
+  selector: '<%= selector %>',
   changeDetection: ChangeDetectionStrategy.<%= changeDetection %>,
   template: `
     <div class="<%= dasherize(name) %>">
