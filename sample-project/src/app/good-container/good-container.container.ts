@@ -1,15 +1,15 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
-  selector: 'app-test-yes',
+  selector: 'app-good-container',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <div class="test-yes">
-      test-yes works!
+    <div class="good-container">
+      good-container works!
     </div>
   `
 })
-export class TestYesContainer implements OnInit {
+export class GoodContainerContainer implements OnInit {
 
   constructor() { }
 
