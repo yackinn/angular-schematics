@@ -52,7 +52,7 @@ function addDeclarationToNgModule(options: any): Rule {
 			return host;
 		}
 
-		options.type = options.type != null ? options.type : 'Component';
+		options.type = options.type != null ? options.type : 'Presenter';
 
 		const modulePath = options.module;
 		const source = readIntoSourceFile(host, modulePath);

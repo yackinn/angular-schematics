@@ -1,16 +1,15 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule }      from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent }     from './app.component';
-import { TestYesContainer } from './test-yes/test-yes.container';
+import { BrowserModule }          from '@angular/platform-browser';
+import { NgModule }               from '@angular/core';
+import { AppRoutingModule }       from './app-routing.module';
+import { AppComponent }           from './app.component';
+import { GoodContainerContainer } from './good-container/good-container.container';
+import { YesTestPresenter } from './yes-test/yes-test.presenter';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestYesContainer,
-
-
+    GoodContainerContainer,
+    YesTestPresenter
   ],
   imports: [
     BrowserModule,
@@ -19,4 +18,5 @@ import { TestYesContainer } from './test-yes/test-yes.container';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
